@@ -30,7 +30,6 @@ http.request({
 		var match,
 			file = data.join(""),
 			cur;
-
 		while ( (match = extract.exec( file )) ) {
 			if ( "#" + match[1] !== match[2] ) {
 				var cat = match[3];
@@ -53,7 +52,6 @@ http.request({
 		if ( cur ) {
 			console.log("</ul>");
 		}
-
 	});
 }).end();
 
